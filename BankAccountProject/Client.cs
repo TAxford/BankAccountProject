@@ -11,7 +11,7 @@ namespace BankAccountProject
         //fields
         private string firstName;
         private string lastName;
-        private int age;
+        private string favoriteColor;
 
         //Properties
         public string FirstName
@@ -20,16 +20,16 @@ namespace BankAccountProject
             set { this.firstName = value; }
         }
 
-        public string LAstName
+        public string LastName
         {
             get { return this.lastName; }
             set { this.lastName = value; }
         }
 
-        public int Age
+        public string FavoriteColor
         {
-            get { return this.age; }
-            set { this.age = value; }
+            get { return this.favoriteColor; }
+            set { this.favoriteColor = value; }
         }
 
         //Constructors
@@ -38,24 +38,15 @@ namespace BankAccountProject
             //default constructor
         }
 
-        public Client(string firstName, string lastName, int age)
+        public Client(string firstName, string lastName, string favoriteColor )
         {
             this.firstName = firstName;
             this.lastName = lastName;
-            this.age = age;
+            this.favoriteColor = favoriteColor;
+            
         }
 
-        //Methods
-        public abstract void Information()
-        {
-            Console.WriteLine("Please Eneter your first name.");
-            Console.ReadLine();
-            Console.WriteLine("Please Eneter your last name.");
-            Console.ReadLine();
-            Console.WriteLine("Please eneter your age.");
-            Console.ReadLine();
-        }
-
+        
 
     }
 }

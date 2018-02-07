@@ -10,17 +10,22 @@ namespace BankAccountProject
     {
         //fields
         private int accountNumber = 987654321;
-        private double accountBalance = 1000000000;
+        private double checkingBalance = 1000000000;
 
+        //Properties
+        public double CheckingBalance
+        {
+            get { return this.checkingBalance; }
+        }
        
         public Checking()
         {
             //Default Constrctor
         }
-        public Checking(int accountNumber, double accountBalance)
+        public Checking(int accountNumber, double checkingBalance)
         {
             this.accountNumber = accountNumber;
-            this.accountBalance = accountBalance;
+            this.checkingBalance = checkingBalance;
         }
     }
 }
